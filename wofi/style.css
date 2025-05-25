@@ -1,0 +1,27 @@
+* {
+	
+}
+
+window {
+	background-color: rgba(80, 80, 80, 0.1);
+}
+
+#outer-box {
+	border: solid 2px white;
+	border-radius: 6px;
+	font-family: CommitMonoNerdFont;
+	color: inherit;
+}
+
+#input {
+	background-color: rgba(80, 80, 80, 0.1);
+}
+
+#entry:selected {
+	 background-color: rgba(180, 180, 180, 0.5);
+}
+
+#img {
+	padding-left: 3px;
+	padding-right: 3px;
+}

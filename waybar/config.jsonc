@@ -1,0 +1,119 @@
+// -*- mode: jsonc -*- 
+{
+	"margin-top": 8,
+	"margin-left": 8,
+	"margin-right": 8,
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 30, // Waybar height (to be removed for auto height)
+    //"width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+		"hyprland/window"    	        
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+    	"group/hardware",
+    	"tray",
+    	"group/audio",
+        "clock",
+        "custom/wlogout"
+    ],
+
+    
+    // Modules configuration
+	"group/audio": {
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": false
+		},
+		"orientation": "horizontal",
+		"modules": [
+			"pulseaudio",
+			"pulseaudio/slider"
+		]
+	},
+    
+	"group/hardware": {
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": false
+		},
+		"orientation": "horizontal",
+		"modules": [
+			"cpu",
+			"disk",
+			"memory"
+		]
+	},
+    
+	"clock": {
+		"on-click": "exec tilix -e calcurse",
+		"tooltip": "true",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"calendar": {
+			"mode": "month",
+			"format": {
+				"days": "<span color='#ababab'><b>{}</b></span>",
+				"today": "<span color='#ffffff'><b>{}</b></span>"
+			}
+		}
+	},
+
+	"hyprland/window": {
+		"format": "{}",
+		"rewrite": {
+			"(.*) — Mozilla Firefox": "󰈹  Firefox",
+			"Tilix: .*": "  Terminal",
+			"(.*) - Thunar": "󰉋  Files",
+			"": " 󰣇 "
+		},
+		"on-click": "wofi --show drun"
+	},
+    
+    "hyprland/workspaces": {
+    	"persistent-workspaces": {
+    		"1": [],
+    		"2": [],
+    		"3": [],
+    		"4": [],
+    		"5": [],
+    	},
+    	"format": "{icon}",
+    	"format-icons": {
+    		"default": "",
+    		"active": "",
+    		"urgent": ""
+    	}
+    },
+
+	"pulseaudio/slider": {
+		"min": 0,
+		"max": 100,
+	},
+
+    "tray": {
+    	"icon-size": "19",
+    	"spacing": "5"
+    },
+    "cpu": {
+    	"on-click": "tilix -e btop",
+    	"format": "  {usage}% "
+    },
+    "disk": {
+    	"format": "  {percentage_used}%"	
+    },
+    "memory": {
+    	"format": "  {used} Gb"
+    },
+    "pulseaudio": {
+    	"format": " {volume}"
+    },
+    "custom/wlogout": {
+    	"format": "⏻",
+    	"on-click": "wlogout"
+    }
+}

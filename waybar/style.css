@@ -1,0 +1,135 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: CommitMonoNerdFont;
+    font-size: 13px;
+    color: white;
+}
+
+window#waybar {
+    background-color: rgba(80, 80, 80, 0);
+    /*color: #ffffff;*/
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-radius: 6px;
+}
+
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+}
+
+tooltip {
+	background: rgba(0, 0, 0, 0.7);
+	border: solid 2px white;
+	border-radius: 6px;
+}
+
+menu {
+	background: rgba(0, 0, 0, 0.2);
+	border: solid 2px white;
+	border-radius: 6px;
+}
+
+/* you can set a style on hover for any module like this */
+#workspaces {
+	padding-left: 6px;
+	padding-right: 9px;
+	color: white;
+	background-color: rgba(80, 80, 80, 0.1);
+	border-radius: 6px;
+	border: solid 2px #d1d1d1;
+	
+} 
+
+#clock {
+	padding: 6px;
+	padding-bottom: 3px;
+	color: white;
+	background-color: rgba(80, 80, 80, 0.1);
+	border-radius: 6px;
+	border: solid 2px #d1d1d1;
+}
+
+#tray {
+	padding-left: 6px;
+	padding-right: 6px;
+	background-color: rgba(80, 80, 80, 0.1);
+	border-radius: 6px;
+	border: solid 2px #d1d1d1;
+}
+
+#pulseaudio-slider {
+	padding: 0px;
+	padding-left: 7px;
+	padding-right: 7px;
+	background: none;
+	min-width: 70px;
+	border-radius: 6px;
+}
+
+#pulseaudio-slider slider {
+	all: unset;
+} 
+
+#pulseuadio-slider trough {
+	all: unset;
+	padding: 4px;
+	border-radius: 1px;
+	background-color: #d1d1d1;
+	border: solid 0px transparent;
+}
+
+#pulseaudio-slider highlight {
+	all: unset;
+	padding: 4px;
+	border-radius: 1px;
+	background-color: #d1d1d1;
+	border: solid 0px transparent;
+}
+
+#window {
+	all: unset;
+	padding-right: 9px;
+	padding-left: 6px;
+	border-radius: 6px;
+	border: solid 2px #d1d1d1;
+}
+
+#hardware {
+	border-radius: 6px;
+	border: solid 2px #d1d1d1;
+	padding: 2px;
+}
+
+#audio {
+	border: solid 2px #d1d1d1;
+	border-radius: 6px;
+	padding: 6px;
+}
+
+#custom-wlogout {
+	border: solid 2px #d1d1d1;
+	border-radius: 6px;
+	padding: 6px;
+	padding-right: 9px;
+}
