@@ -14,8 +14,12 @@ window {
 }
 
 #input {
+	padding: 2px;
+	border-bottom: solid 2px white;
+	border-radius: 0px;
 	background-color: rgba(80, 80, 80, 0.1);
 }
+
 
 #entry:selected {
 	 background-color: rgba(180, 180, 180, 0.5);
