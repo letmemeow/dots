@@ -1,5 +1,5 @@
 # dots
-my unprofessional arch hyprland dot files
+my unprofessional hyprland dot files
 
 
 ![preview](https://github.com/letmemeow/dots/blob/main/preview.png?raw=true)
