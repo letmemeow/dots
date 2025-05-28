@@ -13,6 +13,8 @@ my unprofessional hyprland dot files
 4. wallpaper util: `swww`
 5. clipboard util: `wl-clipboard` and `cliphist`
 6. screenshots: `slurp` and `grim`
+7. nerd font
+   - I use `CommitMono` but you can use whatever you like, just don't forget to change it in configs
 
 
 **theme/gtk settings or whatever you call it**  
