@@ -4,8 +4,15 @@ my unprofessional hyprland dot files
 
 ![preview](https://github.com/letmemeow/dots/blob/main/preview.png?raw=true)
 
-**get all dependencies**
-```curl -sL https://raw.githubusercontent.com/letmemeow/dots/refs/heads/main/install.sh | bash```
+**dependencies**
+1. statusbar: waybar:
+   - `wlogout` for power menu
+   - `pavucontrol` for audio settings
+   - `btop` to monitor pc resources by clicking on cpu usage
+3. app launcher: wofi
+4. wallpaper util: swww
+
+
 
 **theme/gtk settings or whatever you call it**  
 font: CommitMono Nerd 
