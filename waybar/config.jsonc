@@ -45,8 +45,9 @@
 		"orientation": "horizontal",
 		"modules": [
 			"cpu",
+			"custom/gamemode",
 			"disk",
-			"memory"
+			"memory",
 		]
 	},
     
@@ -110,10 +111,16 @@
     	"format": "  {used} Gb"
     },
     "pulseaudio": {
-    	"format": " {volume}"
+    	"format": " {volume}",
+    	"on-click": "pavucontrol"
     },
     "custom/wlogout": {
     	"format": "⏻",
     	"on-click": "wlogout"
+    },
+    "custom/gamemode": {
+    	"format": " 󱢬 ",
+    	"on-click": "~/.config/waybar/gamemode.sh",
+		"tooltip-format": "gamemode toggle"
     }
 }
