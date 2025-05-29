@@ -1,140 +1,31 @@
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: CommitMonoNerdFont;
-    font-size: 13px;
-    color: white;
-}
-
-window#waybar {
-    background-color: rgba(80, 80, 80, 0);
-    /*color: #ffffff;*/
-    transition-property: background-color;
-    transition-duration: .5s;
-    border-radius: 6px;
-}
-
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-
-
-button {
-    /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
-    border: none;
-    border-radius: 0;
-}
-
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-    background: inherit;
-}
-
-tooltip {
-	background: rgba(0, 0, 0, 0.7);
-	border: solid 2px white;
-	border-radius: 6px;
-}
-
-menu {
-	background: rgba(80, 80, 80, 0.2);
-	border: solid 2px white;
-	border-radius: 6px;
-}
-
-/* you can set a style on hover for any module like this */
-#workspaces {
-	padding-left: 6px;
-	padding-right: 9px;
-	color: white;
-	background-color: rgba(80, 80, 80, 0.1);
-	border-radius: 6px;
-	border: solid 2px #d1d1d1;
 	
-} 
+}
 
-#clock {
-	padding: 6px;
-	padding-bottom: 3px;
-	color: white;
+window {
 	background-color: rgba(80, 80, 80, 0.1);
+}
+
+#outer-box {
+	border: solid 2px white;
 	border-radius: 6px;
-	border: solid 2px #d1d1d1;
+	font-family: CommitMonoNerdFont;
+	color: inherit;
 }
 
-#tray {
-	background-color: rgba(80, 80, 80, 0.1);
-	padding-left: 6px;
-	padding-right: 6px;
-	background-color: rgba(80, 80, 80, 0.1);
-	border-radius: 6px;
-	border: solid 2px #d1d1d1;
-}
-
-#pulseaudio-slider {
-	padding: 0px;
-	padding-left: 7px;
-	padding-right: 7px;
-	background: none;
-	min-width: 70px;
-	border-radius: 6px;
-}
-
-#pulseaudio-slider slider {
-	all: unset;
-} 
-
-#pulseuadio-slider trough {
-	all: unset;
-	padding: 4px;
-	border-radius: 1px;
-	background-color: #d1d1d1;
-	border: solid 0px transparent;
-}
-
-#pulseaudio-slider highlight {
-	all: unset;
-	padding: 4px;
-	border-radius: 1px;
-	background-color: #d1d1d1;
-	border: solid 0px transparent;
-}
-
-#window {
-	all: unset;
-	background-color: rgba(80, 80, 80, 0.1);
-	padding-right: 9px;
-	padding-left: 6px;
-	border-radius: 6px;
-	border: solid 2px #d1d1d1;
-}
-
-#hardware {
-	background-color: rgba(80, 80, 80, 0.1);
-	border-radius: 6px;
-	border: solid 2px #d1d1d1;
+#input {
 	padding: 2px;
+	border-bottom: solid 2px white;
+	border-radius: 0px;
+	background-color: rgba(80, 80, 80, 0.1);
 }
 
-#audio {
-	background-color: rgba(80, 80, 80, 0.1);
-	border: solid 2px #d1d1d1;
-	border-radius: 6px;
-	padding: 6px;
+
+#entry:selected {
+	 background-color: rgba(180, 180, 180, 0.5);
 }
 
-#custom-wlogout {
-	background-color: rgba(80, 80, 80, 0.1);
-	border: solid 2px #d1d1d1;
-	border-radius: 6px;
-	padding: 6px;
-	padding-right: 9px;
+#img {
+	padding-left: 3px;
+	padding-right: 3px;
 }
