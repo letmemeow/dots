@@ -45,7 +45,7 @@ tooltip {
 }
 
 menu {
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(80, 80, 80, 0.2);
 	border: solid 2px white;
 	border-radius: 6px;
 }
@@ -71,6 +71,7 @@ menu {
 }
 
 #tray {
+	background-color: rgba(80, 80, 80, 0.1);
 	padding-left: 6px;
 	padding-right: 6px;
 	background-color: rgba(80, 80, 80, 0.1);
@@ -109,6 +110,7 @@ menu {
 
 #window {
 	all: unset;
+	background-color: rgba(80, 80, 80, 0.1);
 	padding-right: 9px;
 	padding-left: 6px;
 	border-radius: 6px;
@@ -116,18 +118,21 @@ menu {
 }
 
 #hardware {
+	background-color: rgba(80, 80, 80, 0.1);
 	border-radius: 6px;
 	border: solid 2px #d1d1d1;
 	padding: 2px;
 }
 
 #audio {
+	background-color: rgba(80, 80, 80, 0.1);
 	border: solid 2px #d1d1d1;
 	border-radius: 6px;
 	padding: 6px;
 }
 
 #custom-wlogout {
+	background-color: rgba(80, 80, 80, 0.1);
 	border: solid 2px #d1d1d1;
 	border-radius: 6px;
 	padding: 6px;
