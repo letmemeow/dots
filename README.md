@@ -15,6 +15,7 @@ my unprofessional hyprland dot files
 6. screenshots: `slurp` and `grim`
 7. nerd font
    - I use `CommitMono` but you can use whatever you like, just don't forget to change it in configs
+8. GUI wallpaper manager: `waypaper`
 
 
 **theme/gtk settings or whatever you call it**  
@@ -25,11 +26,12 @@ gtk theme: [Jolly-GTK](https://www.pling.com/p/1654335)
 
 **keybinds**
 1. most default hyprland keybinds
-2. `super + b` opens firefox
+2. `super + B` launch firefox
 3. `ctrl + alt + left/riht/up/down` move active window to chosen direction
-4. `super v` open clipboard history
+4. `super V` open clipboard history
 5. `alt + tab` emulates alt tabing
-6. `super + shift + s` make a screenshot
+6. `super + shift + S` make a screenshot
+7. `super + W` launch waypaper
 
 
 wallpaper: https://wallhaven.cc/w/dg5kkm
