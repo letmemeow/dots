@@ -13,10 +13,10 @@ REQUIRED_PKGS=(
 )
 
 echo "📦 Updating system..."
-sudo pacman -Syu --noconfirm
+yay -Syu --noconfirm
 
 echo "📦 Installing required packages..."
-sudo pacman -S --noconfirm "${REQUIRED_PKGS[@]}"
+yay -S --noconfirm "${REQUIRED_PKGS[@]}"
 
 # Ask for config backup
 read -p "📁 Do you want to back up your current ~/.config folder? (y/n): " backup_answer
