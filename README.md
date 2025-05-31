@@ -4,7 +4,7 @@ my unprofessional hyprland dot files
 
 ![preview](https://github.com/letmemeow/dots/blob/main/preview.png?raw=true)
 **install script**  
-`bash <(curl -sL https://raw.githubusercontent.com/letmemeow/dots/refs/heads/main/install.sh)`
+`bash <(curl -sL https://raw.githubusercontent.com/letmemeow/dots/refs/heads/main/install.sh)`  
 *script made with ai so might work weird, but at least it asks if you want a backup before applying configs*
 
 **dependencies**
