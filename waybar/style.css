@@ -124,7 +124,7 @@ menu {
 	border: solid 0px transparent;
 }
 
-#window {
+#mpris {
 	all: unset;
 	/* background-color: rgba(80, 80, 80, 0.1); */
 	padding-right: 0px;
