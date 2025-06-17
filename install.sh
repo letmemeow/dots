@@ -47,4 +47,6 @@ for item in "${CONFIG_ITEMS[@]}"; do
   cp -r "$DOTFILES_DIR/$item" "$CONFIG_DIR/"
 done
 
+chmod +x "$CONFIG_DIR/waybar/gamemode.sh"
+
 echo "✅ Done! You may now log out and log back in to apply Hyprland configs."
