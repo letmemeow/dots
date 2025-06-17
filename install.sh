@@ -8,7 +8,7 @@ CONFIG_DIR="$HOME/.config"
 BACKUP_DIR="$HOME/.config-backup-$(date +%Y%m%d-%H%M%S)"
 
 REQUIRED_PKGS=(
-  hyprland kitty nemo wofi wlogout waybar swww slurp grim
+  hyprland kitty nemo wofi wlogout waybar hyprpaper slurp grim
   micro qview gthumb nwg-look btop pavucontrol waypaper wl-clipboard cliphist
   otf-commit-mono-nerd
 )
