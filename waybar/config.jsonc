@@ -10,14 +10,14 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-		"hyprland/window"    	        
+		"hyprland/window",
+		"tray"    	        
     ],
     "modules-center": [
         "hyprland/workspaces"
     ],
     "modules-right": [
     	"group/hardware",
-    	"tray",
     	"group/audio",
         "clock",
         "custom/wlogout"
@@ -52,7 +52,7 @@
 	},
     
 	"clock": {
-		"on-click": "exec tilix -e calcurse",
+		"on-click": "exec kitty -e calcurse",
 		"tooltip": "true",
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
 		"calendar": {
@@ -68,7 +68,7 @@
 		"format": "{}",
 		"rewrite": {
 			"(.*) — Mozilla Firefox": "󰈹  Firefox",
-			"Tilix: .*": "  Terminal",
+			"Kitty: .*": "  Terminal",
 			"(.*) - Thunar": "󰉋  Files",
 			"": " 󰣇 "
 		},
@@ -101,7 +101,7 @@
     	"spacing": "5"
     },
     "cpu": {
-    	"on-click": "tilix -e btop",
+    	"on-click": "kitty -e btop",
     	"format": "  {usage}% "
     },
     "disk": {
