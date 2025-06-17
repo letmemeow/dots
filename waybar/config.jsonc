@@ -10,7 +10,7 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-		"hyprland/window",
+		"mpris",
 		"tray"    	        
     ],
     "modules-center": [
@@ -63,17 +63,6 @@
 			}
 		}
 	},
-
-	"hyprland/window": {
-		"format": "{}",
-		"rewrite": {
-			"(.*) — Mozilla Firefox": "󰈹  Firefox",
-			"Kitty: .*": "  Terminal",
-			"(.*) - Thunar": "󰉋  Files",
-			"": " 󰣇 "
-		},
-		"on-click": "wofi --show drun"
-	},
     
     "hyprland/workspaces": {
     	"persistent-workspaces": {
@@ -122,5 +111,20 @@
     	"format": " 󱢬 ",
     	"on-click": "~/.config/waybar/gamemode.sh",
 		"tooltip-format": "gamemode toggle"
+    },
+    "mpris": {
+    	"format": "{player_icon} {artist} - {title} {status_icon}",
+    	"player-icons": {
+    		"default": "",
+    		"spotify": " ",
+    		"firefox": ""
+    	},
+    	"status-icons": {
+    		"playing": "󰏤",
+    		"paused": "󰐊"	
+    	},
+    	"title-len": 25,
+    	"artist-len": 15,
+    	// "ignored-players": ["firefox"]
     }
 }
